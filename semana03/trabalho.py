@@ -59,7 +59,7 @@ def remover (lista, nome, id, nota):
                 lista = (None)
                 return lista
             elif aux.proximo == None:
-                lista = aux.anterior
+                lista = aux.anterior.proximo = None
                 return lista
 
 
