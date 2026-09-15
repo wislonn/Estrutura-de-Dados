@@ -6,7 +6,7 @@ class No:
 
 
 def retirar(carros):
-    print("cu")
+    print("aaaa")
 
 
 
