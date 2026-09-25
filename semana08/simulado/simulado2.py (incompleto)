@@ -1,0 +1,66 @@
+class No:
+    def __init__(self, nome, id, status):
+        self.nome = nome
+        self.id = id
+        self.status = status
+        self.proximo = None
+        self. anterior = None
+
+
+def inserir(nome, id, lista):
+    no = No(nome, id)
+    if lista == None:
+        lista = no
+        lista.proximo = no
+        lista.anterior = no
+        return lista
+    lista.proximo = lista
+    lista.anterior = no
+
+
+
+    while aux.proximo != None:
+        if aux.proximo.pessoa == pessoa:
+            aux.proximo = aux.proximo.proximo
+            return lista
+
+
+
+
+
+
+
+
+
+
+
+
+def menu():
+    print("1 - inserir servidor")
+    print("2 - remover servidor")
+    print("3 - ligar/desligar servidor")
+    print("4 - percorrer lista (frente e trás)")
+    opc = int(input("qual opção? "))
+    return opc
+def main():
+    opc = 0
+    lista = None
+    while opc != 5:
+        opc = menu()
+        if opc == 1:
+            nome = input("qual o nome? ")
+            id = int(input("qual o id? "))
+            lista = inserir(nome, id, lista)
+        elif opc == 2:
+            nome = input("qual o nome? ")
+            id = int(input("qual o id? "))
+            lista = remover(nome, id, lista)            
+
+
+
+
+
+
+
+
+main()
